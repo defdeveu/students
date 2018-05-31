@@ -11,7 +11,7 @@ private void validateUrl(String url) {
 		if (url.contains("\\")) {
 			throw new RuntimeException("invalid char!");
 		}
-		String pattern = "(http|https):\\/\\/[A-Za-z0-9_--~]*";
+		String pattern = "(http|https):\\/\\/[A-Za-z0-9_-~\\.]*";
 
 		// Create a Pattern object
 		Pattern r = Pattern.compile(pattern);
